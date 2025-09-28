@@ -18,7 +18,6 @@ class _MyAppsState extends State<MyApps> {
   @override
   Widget build(BuildContext context) {
 
-    var arrNames = ["Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad"];
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -34,14 +33,7 @@ class _MyAppsState extends State<MyApps> {
        ),
       ),
 
-      body: ListView.separated(itemBuilder: (context, index) {
-        return Text(arrNames[index], style: TextStyle(
-          fontWeight: FontWeight.bold, color: Colors.black, fontSize: 27),);
-      },
-          separatorBuilder: (context, index) {
-            return Divider(height: 20, thickness: 5,);
-          },
-          itemCount: arrNames.length)
+      body:
     );
   }
 }
@@ -237,4 +229,14 @@ class _MyAppsState extends State<MyApps> {
 // ),
 // ),
 // )
+
+// var arrNames = ["Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad","Ali","Hammad"];
+// ListView.separated(itemBuilder: (context, index) {
+// return Text(arrNames[index], style: TextStyle(
+// fontWeight: FontWeight.bold, color: Colors.black, fontSize: 27),);
+// },
+// separatorBuilder: (context, index) {
+// return Divider(height: 20, thickness: 5,);
+// },
+// itemCount: arrNames.length)
 
