@@ -33,7 +33,76 @@ class _MyAppsState extends State<MyApps> {
        ),
       ),
 
-      body:
+      body: Center(
+        child: Column(
+
+          children: [
+            Expanded(
+              flex: 2,
+              child: Container(
+                width: 300,
+                height: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  border: Border.all(
+                    color: Colors.black,
+                    width: 4,
+                  ),
+                  color: Colors.blue,
+                  boxShadow: [BoxShadow(blurRadius: 30)],
+                ),
+              ),
+            ),
+            Expanded(
+              child: Container(
+                width: 300,
+                height: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  border: Border.all(
+                    color: Colors.black,
+                    width: 4,
+                  ),
+                  color: Colors.purple,
+                  boxShadow: [BoxShadow(blurRadius: 30)],
+                ),
+              ),
+            ),
+            Expanded(
+              child: Container(
+                width: 300,
+                height: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  border: Border.all(
+                    color: Colors.black,
+                    width: 4,
+                  ),
+                  color: Colors.black,
+                  boxShadow: [BoxShadow(blurRadius: 30)],
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 3,
+              child: Container(
+                width: 300,
+                height: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  border: Border.all(
+                    color: Colors.black,
+                    width: 4,
+                  ),
+                  color: Colors.green,
+                  boxShadow: [BoxShadow(blurRadius: 30)],
+                ),
+              ),
+            ),
+          ],
+        ),
+
+      ),
     );
   }
 }
