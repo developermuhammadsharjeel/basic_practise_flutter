@@ -34,20 +34,14 @@ class _MyAppsState extends State<MyApps> {
        ),
       ),
 
-      body: Padding(
-        padding: const EdgeInsets.all(23.0),
-        child: Center(
-          child: ListView.builder(itemBuilder: (context, index){
-
-            return Text(arrNames[index],style: TextStyle(fontWeight: FontWeight.bold, color:Colors.black, fontSize: 27,));
+      body: ListView.separated(itemBuilder: (context, index) {
+        return Text(arrNames[index], style: TextStyle(
+          fontWeight: FontWeight.bold, color: Colors.black, fontSize: 27),);
+      },
+          separatorBuilder: (context, index) {
+            return Divider(height: 20, thickness: 5,);
           },
-          itemCount: arrNames.length,
-            scrollDirection: Axis.vertical,
-            itemExtent: 50,
-
-          ),
-        ),
-      )
+          itemCount: arrNames.length)
     );
   }
 }
@@ -229,5 +223,18 @@ class _MyAppsState extends State<MyApps> {
 // )
 
 // body:
-
+// Padding(
+// padding: const EdgeInsets.all(23.0),
+// child: Center(
+// child: ListView.builder(itemBuilder: (context, index){
+//
+// return Text(arrNames[index],style: TextStyle(fontWeight: FontWeight.bold, color:Colors.black, fontSize: 27,));
+// },
+// itemCount: arrNames.length,
+// scrollDirection: Axis.vertical,
+// itemExtent: 50,
+//
+// ),
+// ),
+// )
 
