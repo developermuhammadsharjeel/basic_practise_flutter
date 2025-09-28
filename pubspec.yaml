@@ -1,0 +1,44 @@
+name: lab_4
+description: "All-in-one enhanced Flutter tutorial app (single-file main.dart) demonstrating widgets, state management, theming, forms, persistence, animations, async, streams, custom painter, and more."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+  # flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.2
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/one.jpeg
+    - assets/images/two.jpeg
+    - assets/images/three.jpeg
+    - assets/images/four.jpeg
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 700
+
+# CHANGELOG OF THIS FILE (for your reference):
+# - Added shared_preferences (required by main.dart for persistence + theme)
+# - Added google_fonts for custom typography usage
+# - Added Montserrat custom font definition for bold/beautiful UI
+# - Expanded description to reflect educational purpose
+# - Kept everything else minimal to align with "single-file tutorial" goal
