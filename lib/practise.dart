@@ -33,24 +33,7 @@ class _MyAppsState extends State<MyApps> {
        ),
       ),
 
-      body: Center(
-
-        child: Container(
-          margin: EdgeInsets.all(10),
-          width: 200,
-          height: 150,
-          decoration: BoxDecoration(
-            color: Colors.purple,
-          ),
-          child: Center(
-
-              child: Padding(
-                padding: const EdgeInsets.only(top: 100, left: 20),
-                child: Text("Just Sample", style: TextStyle( fontWeight: FontWeight.bold, color: Colors.black, fontSize: 27),),
-              )
-          ),
-        ),
-      )
+      body:
     );
   }
 }
@@ -277,3 +260,22 @@ class _MyAppsState extends State<MyApps> {
 // ),
 // ),
 
+// Padding
+// Center(
+
+// child: Container(
+// margin: EdgeInsets.all(10),
+// width: 200,
+// height: 150,
+// decoration: BoxDecoration(
+// color: Colors.purple,
+// ),
+// child: Center(
+//
+// child: Padding(
+// padding: const EdgeInsets.only(top: 100, left: 20),
+// child: Text("Just Sample", style: TextStyle( fontWeight: FontWeight.bold, color: Colors.black, fontSize: 27),),
+// )
+// ),
+// ),
+// )
