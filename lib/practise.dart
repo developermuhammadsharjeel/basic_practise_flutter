@@ -34,75 +34,23 @@ class _MyAppsState extends State<MyApps> {
       ),
 
       body: Center(
-        child: Column(
 
-          children: [
-            Expanded(
-              flex: 2,
-              child: Container(
-                width: 300,
-                height: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 4,
-                  ),
-                  color: Colors.blue,
-                  boxShadow: [BoxShadow(blurRadius: 30)],
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                width: 300,
-                height: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 4,
-                  ),
-                  color: Colors.purple,
-                  boxShadow: [BoxShadow(blurRadius: 30)],
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                width: 300,
-                height: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 4,
-                  ),
-                  color: Colors.black,
-                  boxShadow: [BoxShadow(blurRadius: 30)],
-                ),
-              ),
-            ),
-            Expanded(
-              flex: 3,
-              child: Container(
-                width: 300,
-                height: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 4,
-                  ),
-                  color: Colors.green,
-                  boxShadow: [BoxShadow(blurRadius: 30)],
-                ),
-              ),
-            ),
-          ],
+        child: Container(
+          margin: EdgeInsets.all(10),
+          width: 200,
+          height: 150,
+          decoration: BoxDecoration(
+            color: Colors.purple,
+          ),
+          child: Center(
+
+              child: Padding(
+                padding: const EdgeInsets.only(top: 100, left: 20),
+                child: Text("Just Sample", style: TextStyle( fontWeight: FontWeight.bold, color: Colors.black, fontSize: 27),),
+              )
+          ),
         ),
-
-      ),
+      )
     );
   }
 }
@@ -308,4 +256,24 @@ class _MyAppsState extends State<MyApps> {
 // return Divider(height: 20, thickness: 5,);
 // },
 // itemCount: arrNames.length)
+
+
+
+//Expnaded concept.....
+// Expanded(
+// flex: 3,
+// child: Container(
+// width: 300,
+// height: 100,
+// decoration: BoxDecoration(
+// borderRadius: BorderRadius.all(Radius.circular(20)),
+// border: Border.all(
+// color: Colors.black,
+// width: 4,
+// ),
+// color: Colors.green,
+// boxShadow: [BoxShadow(blurRadius: 30)],
+// ),
+// ),
+// ),
 
