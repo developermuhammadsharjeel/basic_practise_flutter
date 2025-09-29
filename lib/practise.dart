@@ -17,8 +17,7 @@ class MyApps extends StatefulWidget {
 class _MyAppsState extends State<MyApps> {
   @override
   Widget build(BuildContext context) {
-
-
+    
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -33,7 +32,13 @@ class _MyAppsState extends State<MyApps> {
        ),
       ),
 
-      body:
+
+      body: Center(
+        child: CircleAvatar(
+          radius: 100,
+          backgroundImage: AssetImage("assets/images/three.jpeg"),
+        ),
+      ),
     );
   }
 }
@@ -279,3 +284,23 @@ class _MyAppsState extends State<MyApps> {
 // ),
 // ),
 // )
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#######################################################
+//list view Builder
+//ListView.separated(itemBuilder: (context, index) {
+// 
+//         return ListTile(
+// 
+//           leading: Text('${index+1}'),
+//           title: Text(arrNames[index]),
+//           subtitle: Text('Number'),
+//           trailing: Icon(Icons.add),
+// 
+//         );
+//       },
+//         itemCount: arrNames.length,
+//         
+//         separatorBuilder: (context, index) {
+//           return Divider(height: 20, thickness: 5,);
+// 
+//         },
+//       ),
