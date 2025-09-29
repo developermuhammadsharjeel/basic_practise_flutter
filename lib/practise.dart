@@ -33,13 +33,42 @@ class _MyAppsState extends State<MyApps> {
       ),
 
 
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: CircleAvatar(
-            radius: 100,
-            backgroundImage: AssetImage("assets/images/one.jpeg"),
-          ),
+      body: Container(
+        height: 80,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          color: Colors.greenAccent,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Expanded(
+              flex: 2,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: CircleAvatar(
+
+                  radius: 25,
+                  backgroundImage: AssetImage("assets/images/one.jpeg"),
+                ),
+              ),
+            ),
+
+            Expanded(
+              flex: 5,
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 30),
+                  child: Text("Whats APP", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color:Colors.black),),
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Icon(Icons.settings),
+            ),
+          ],
         ),
       ),
     );
