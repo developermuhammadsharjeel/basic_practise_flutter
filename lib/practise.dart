@@ -34,9 +34,12 @@ class _MyAppsState extends State<MyApps> {
 
 
       body: Center(
-        child: CircleAvatar(
-          radius: 100,
-          backgroundImage: AssetImage("assets/images/one.jpeg"),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: CircleAvatar(
+            radius: 100,
+            backgroundImage: AssetImage("assets/images/one.jpeg"),
+          ),
         ),
       ),
     );
